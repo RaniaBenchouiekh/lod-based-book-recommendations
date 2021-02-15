@@ -55,15 +55,6 @@ Here are some screenshots.
     <td><img src="screenshots/Picture5.png" width="470"/></td>
     <td><img src="screenshots/Picture6.png" width="470"/></td>
   </tr>
-  <tr>
-    <td>
-        <b>Recommendations System Connexion</b>
-        <p><sub>Where the user can connect to the Recommender and see the list of his recommendation when generated</sub></p>
-    </td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/Picture7.png" width="470"/></td>
-  </tr>
  </table>
  
 ## Installation
