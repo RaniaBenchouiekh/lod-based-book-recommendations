@@ -1,0 +1,441 @@
+$lightBeige : #eae7dc;
+$lightBeigeTrans : #eae7dc;
+$darkBeige : #d8c3a5;
+$grey : #8e8d8a;
+$lightRed:#e98074;
+$red :#e85a4f;
+
+$darkGreen:#2c3531;
+$darkGreenTrans:#2c3531c9;
+$lightGreen:#116466;
+$brown:#d9b08c; 
+$darkBeige:#ffcb9a;
+$lightBeige : #eae7dc;
+$blue:#d1e8e2;
+
+$lightGrey: #f2f2f2;
+$lightGrey2: #f3f7f6;
+$red: #f33e1b;
+$green: #3cb35e;
+$darkGreen: #2b8144;
+$darkBlue: #386e8a;
+$lightGreen: #bdd1bd;
+$lightGreenBack: #dae6da;
+
+
+*:focus{ outline : none;}
+
+.Profile-wrapper{
+    background-image: url(../../../Assets/savedBack.jpg);
+    background-repeat: repeat;
+    background-size:  666px 310px;
+    display:block;
+    width: 100%;
+    height: 610px;
+}
+.Profile-wrapper-loading{
+    height: 610px;
+    width: 100%;
+    background-image: url(../../../Assets/savedBack.jpg);
+    background-repeat: repeat;
+    background-size:  666px 310px;
+}
+.Profile-wrapper-loading>img{
+    position: absolute;
+    top: 53%;
+    left: 49.7%;
+}
+.Profile-cnxError{
+    height: 610px;
+    width: 100%;
+    background-image: url(../../../Assets/savedBack.jpg);
+    background-repeat: repeat;
+    background-size:  666px 310px;
+}
+.Profile-cnxError>p{
+    position: absolute;
+    top: 53%;
+    left: 35.6%;
+    color: $grey;
+}
+.Profile-card{  
+    background-color: $lightGrey;
+    height: 400px;
+    width: 310px;
+    position: absolute;
+    margin:auto;
+    top:150px;
+    bottom: 0;
+    left:100px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 1px $darkGreenTrans;
+}
+.Profile-cardInfo{ 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.Profile-firstName{
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    color: $red;
+    position: absolute;
+    letter-spacing: 1px;
+    font-weight: 600;
+    top:105px;
+   /* margin-left: 110px;*/
+}
+.Profile-lastName{
+    font-size: 14px;
+    position: absolute;
+  /*  margin-left: 120px; */
+    top:138px;
+    font-family: "Work Sans",sans-serif;
+    color:$darkGreen
+}
+.Profile-cardSubInfo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 10px 30px;
+   /* margin-left: 50px;*/
+}
+.Profile-webid{
+    position: absolute;
+    top:153px;
+    color:$darkGreenTrans;
+    font-size: 12px;
+    font-family: "Work Sans",sans-serif;
+    line-height: 28px;
+}
+.Profile-email{
+    display: block;
+    position: absolute;
+    top:206px;
+    color: rgb(75,75,75);
+    text-align: center;
+    font-size: 13px;
+    font-family: "Work Sans",sans-serif;
+}
+.Profile-birthday{
+    position: absolute;
+    top:236px;
+    color: rgb(75,75,75);    
+    text-align: center;
+    font-size: 13px;
+    font-family: "Work Sans",sans-serif;
+}
+
+.Profile-gender{
+    position: absolute;
+    top:264px;
+    color: rgb(75,75,75);
+    text-align: center;
+    font-size: 13px;
+    font-family: "Work Sans",sans-serif;
+}
+
+.Profile-gender::first-letter{
+    text-transform: uppercase;
+}
+
+.Profile-genres{
+    display : block;
+    position: absolute;
+    top:291px;
+    color: rgb(75,75,75);
+    font-size: 13px;
+    font-family: "Work Sans",sans-serif;
+    cursor: pointer;
+}
+.Profile-genres>p{
+    float: left;
+    margin-top: 2px;
+    display: -webkit-box;
+    max-width: 190px;
+    margin-left: -17px;
+    padding-left: 0;
+    padding: 0;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.Profile-genresContainer>button{
+    position: absolute;
+    top: 292px;
+    left: 240px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    color: $darkGreen;
+}
+.Profile-genresContainer>button:hover{
+    color: $green;
+}
+.Profile-genresHoverContainer{
+  display: none;
+  z-index: 90;
+  padding: 0 8px;
+  position: absolute;
+  top: 0px;
+  left : 74px;
+  width: fit-content;
+  background-color: $lightGrey2;
+  border-radius: 2px;
+  box-shadow: 2px .8rem 1rem rgba(0,0,0,.3);
+  border: 0.5px solid rgb(102, 102, 102);
+}
+.Profile-genresHover{
+  float: left;
+  display: -webkit-box;
+  width: 100%;
+  color: $darkGreenTrans;
+  font-size: 12px;
+  z-index: 90;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical; 
+  text-align: center;
+}
+.Profile-genresContainer{
+    display: block;
+}
+.Profile-genresHoverMore{
+  margin-left:70px;
+  margin-bottom: 5px;
+  width:200px;
+  text-align: center;
+  font-size: 10px;
+  font-style: italic;
+  color:$darkGreenTrans;
+}
+.Profile-genres:active>.Profile-genresHoverContainer, 
+.Profile-genresHoverContainer:hover,
+.Profile-genres:active>.Profile-genresHoverMore{
+    display: block;
+}
+.Profile-devider{
+    background-color: $darkGreen;
+    height: 1px;
+    width: 156px;
+    position: absolute;
+    top:186px; 
+}
+.Profile-icons{
+    float: left;
+    width:16px;
+    height: 16px;
+    margin-right:6px;
+}
+.Profile-enableModify{
+    position: absolute;
+    bottom: 30px;
+    background-color: $green;
+    border: .5px solid $green;
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 8px 25px;
+    color:white;
+    font-family: "Work Sans",sans-serif;
+    outline: none;
+    transition: 0.2s;
+}
+#Profile-picture{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+.Profile-card:hover #Profile-picture{
+    transform: scale(0.42,0.34) translateY(-513px);
+    background-size: 100% 100%;
+    background-position: 0 -25px;
+}
+.Profile-card:hover{
+    box-shadow: 0 0 10px 1px $darkGreen;
+}
+.Profile-enableModify:hover,
+.Profile-submitButton:hover,
+.Profile-submitInfoButton:hover{
+    cursor: pointer;
+    box-shadow:  0 0 10px 0.1px $darkGreenTrans;
+}
+.Profile-modificationFields, 
+.Profile-genreFields{
+    position: absolute;
+    margin:auto;
+    top:150px;
+    bottom: 0;
+    left:500px;
+    width: 700px;
+    height: 400px;
+    background-color: $lightGrey;
+    border-radius: 8px;
+    box-shadow:  0 0 10px 1px $darkGreenTrans;
+}
+.Profile-genreFields{
+    display: none;
+}
+.Profile-inputWrapper{
+    margin: 35px 50px;
+}
+.Profile-inputField{
+    margin-bottom: 30px;
+}
+.Profile-inputFieldLab{
+    color: $darkGreen;
+    float: left;
+    width: 100px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.Profile-inputFieldIn{
+    width: 460px;
+    height: 25px;
+    background-color: rgb(241, 241, 241);
+    border: 0.5px solid $grey;
+    padding-left: 10px;
+}
+.Profile-inputFieldIn::placeholder{
+    color: rgb(179, 179, 179);
+}
+.Profile-radioArea{
+    position: absolute;
+    margin:auto;
+    width: 67%;
+    bottom:40px;
+    left:145px;
+}
+.Profile-radioLabel{
+    color: $green;
+    font-weight: bolder;
+    margin-right: 23px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.Profile-modifyLabel{
+    color: $red;
+    margin-left: 50px;
+    margin-top:30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+}
+.Profile-radioLabel:hover,
+.Profile-radioBox:hover{
+    color: $lightGreen;
+    cursor: pointer;
+}
+.Profile-submitButton{
+    position: absolute;
+    bottom: 22px;
+    right: 30px;
+    background-color: $green;
+    border: .5px solid $green;
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 10px 14px;
+    color:white;
+    font-family: "Work Sans",sans-serif;
+    outline: none;
+}
+.Profile-submitInfoButton{
+    position: absolute;
+    right:0px;
+    bottom:-18px;
+    background-color: $green;
+    border: .5px solid $green;
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 10px 14px;
+    color:white;
+    font-family: "Work Sans",sans-serif;
+    outline: none;
+}
+.Profile-userGenres{
+    position: absolute;
+    top:30px;
+    bottom: 0;
+    right:30px;
+    width: 40%;
+    height: 280px;
+    background-color: $lightGrey2;
+    border-radius: 8px;
+    box-shadow:  0 0 10px 4px rgb(194, 193, 189);
+}
+.Profile-allGenres{
+    position: absolute;
+    top:30px;
+    bottom: 0;
+    left:30px;
+    width: 40%;
+    height: 280px;
+    background-color: $lightGrey2;
+    border-radius: 8px;
+    box-shadow:  0 0 10px 4px rgb(194, 193, 189);
+}
+.Profile-allGenres>h4, .Profile-userGenres>h4{
+    text-align: center;
+    color: $red;
+}
+.Profile-genresButtons{
+    position: absolute;
+    top: 170px;
+    left: 337px;
+    width: 20px;
+}
+.Profile-genresButtons>button{
+    margin-bottom:20px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 25px;
+    height: 24px;
+    background-color: $lightGreen;
+    border: 1px solid $darkGreen;
+    color: $darkGreen
+}
+.Profile-genresButtons>button:hover{
+    background-color: $darkGreen;
+    color: $lightGreen;
+}
+#userGenresSelect, #allGenresSelect {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: 0 !important;
+  background-color: $lightGrey2;
+  background-image: none;
+  width: 278px;
+  text-align: center;
+}
+#userGenresSelect>option::first-letter, 
+#allGenresSelect>option::first-letter {
+    text-transform: uppercase;
+}
+.Profile-note{
+  position: absolute;
+  bottom: 22px;
+  left: 30px;
+  font-size: 13px;
+  color:$darkGreenTrans;
+  font-family: "Work Sans",sans-serif;
+  width: 70%;
+}

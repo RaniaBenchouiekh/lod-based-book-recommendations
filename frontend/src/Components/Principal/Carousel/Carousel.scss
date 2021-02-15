@@ -1,0 +1,123 @@
+$lightBeige : #eae7dc;
+$lightBeigeTrans : #eae7dc;
+$darkBeige : #d8c3a5;
+$grey : #8e8d8a;
+$lightRed:#e98074;
+$red :#e85a4f;
+
+$darkGreen:#2c3531;
+$darkGreenTrans:#2c3531c9;
+$lightGreen:#116466;
+$brown:#d9b08c; //used for the steps in the stepper
+$darkBeige:#ffcb9a;
+$lightBeige : #eae7dc;
+$blue:#d1e8e2;
+
+$lightGrey: #f2f2f2;
+$lightGrey2: #f3f7f6;
+$red: #f33e1b;
+$green: #3cb35e;
+$darkGreen: #2b8144;
+$darkBlue: #386e8a;
+$lightGreen: #bdd1bd;
+$lightGreenBack: #dae6da;
+
+.Carousel-image1,
+.Carousel-image2,
+.Carousel-image3{
+    height: 180px;
+    background-color: rgb(25, 118, 146);
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.Carousel-image1{
+    background: url(../../../Assets/carouselImg1.jpg);
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 28px 13px rgb(0, 0, 0);
+}
+.Carousel-image1 h3{
+    position: absolute;
+    top: -2px;
+    left: 100px;
+    color: white;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+.Carousel-image1>div{
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 100%;
+    height: 180px;
+}
+.Carousel-image1>div>div{
+    float: left;
+    height: 68px;
+    width: 26%;
+    border-left: 3px solid $lightGreen;
+    color: white;
+    margin-top: 70px;
+    padding-left: 10px;
+    margin-right: 25px;
+    font-size: 19px;
+    padding-top: 10px;
+}
+.Carousel-image1Comment1{
+    margin-left: 100px;
+}
+.Carousel-image3{
+    background: url(../../../Assets/carouselImg3.jpg);
+    background-size: 100% 100%;
+}
+.Carousel-image3>div{
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 100%;
+    height: 180px;
+}
+.Carousel-image3 h3{
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.295);
+    color: rgb(240, 233, 223);
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+.Carousel-image3Comment1{
+    margin-top: 60px;
+    margin-left: 180px;
+    margin-bottom: 0;
+}
+.Carousel-image3Comment2{
+    margin-top: 0;
+    margin-left: 330px;
+}
+.Carousel-image3Comment1 span{
+    font-weight: bolder;
+    color: #60add4;
+}
+.Carousel-image3Comment2 span{
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: $lightGreen;
+}
+
+.carousel-dots{
+    margin-top: 0 !important;
+    background-color: $lightBeige;
+    padding-bottom: 5.5px !important;
+}
+.carousel-dots li.carousel-dots-active button:before{
+    color: $red !important;
+}
+.carousel-prev{
+    width: 70px !important;
+    padding-left: 30px;
+}
+.carousel-prev:before{
+    background-image: url(../../../Assets/prev.png) !important;
+}
+.carousel-next{
+    width: 70px !important;
+    padding-right: 40px;
+}
+.carousel-next:before{
+    background-image: url(../../../Assets/next.png) !important;
+}

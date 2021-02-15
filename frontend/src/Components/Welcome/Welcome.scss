@@ -1,0 +1,465 @@
+$lightBeige : #eae7dc;
+$lightBeigeTrans : #eae7dc8f;
+$darkBeige : #d8c3a5;
+$grey : #8e8d8a;
+$lightRed:#e98074;
+$red :#e85a4f;
+
+$darkGreen:#2c3531;
+$darkGreenTrans:#2c3531c9;
+$lightGreen:#116466;
+$brown:#d9b08c; //used for the steps in the stepper
+$darkBeige:#ffcb9a;
+$lightBeige : #eae7dc;
+$blue:#d1e8e2;
+
+$lightGrey: #f2f2f2;
+$lightGrey2: #f3f7f6;
+$red: #f33e1b;
+$green: #58a21d;
+
+
+.Welcome-wrapper{
+  /*  background-image: url(../../Assets/welcom.jpg);
+    background-size: 100% 100%;
+    background-repeat: repeat;*/
+    margin: 0;
+    height: 100%;
+    font-family: "open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  
+   
+}
+.Welcome-header{
+    background-color: $lightGrey;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 10222;
+    border-bottom: 0.5px solid rgb(216, 216, 216);
+    
+}
+.Welcome-headerContactsIcon{
+    width: 35px;
+    height: 35px;
+    float: left;
+    border: 1px solid $blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.Welcome-headerContactsIcon>img{
+    height: 15px;
+    width: 15px;
+}
+.Welcome-headerContactsIcon:hover{
+    background-color: $blue;
+    border-color: $blue;
+}
+.Welcome-fb{ content:url(../../Assets/facebook-logo-w.png); }
+.Welcome-insta{ content:url(../../Assets/instagram-logo-w.png); }
+.Welcome-in{ content:url(../../Assets/linkedin-logo-w.png); }
+.Welcome-gh{ content:url(../../Assets/github-logo-w.png); }
+
+.Welcome-headerContactsIcon:hover>.Welcome-fb{ content:url(../../Assets/facebook-logo.png); }
+.Welcome-headerContactsIcon:hover>.Welcome-insta{ content:url(../../Assets/instagram-logo.png); }
+.Welcome-headerContactsIcon:hover>.Welcome-in{ content:url(../../Assets/linkedin-logo.png); }
+.Welcome-headerContactsIcon:hover>.Welcome-gh{ content:url(../../Assets/github-logo.png); }
+
+.Welcome-headerContacts{
+    position: absolute;
+    top: 50px;
+    left: 66px;
+}
+#Welcome-appTitle h3 {
+    color: rgb(75, 75, 75);
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "open Sans", sans-serif;
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+}
+#Welcome-appTitle h5 {
+    color: $grey;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: -5px;
+    margin-left: 8px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-right: 30px;
+}
+#Welcome-appTitle{
+    position: absolute;
+    display: block;
+    left: 80px;
+    top: -12px;
+    width: 300px;
+}
+#Welcome-appTitle span{
+    display: block;
+    float: left;
+}
+.Welcome-googleImg{
+    width: 100px;
+    height: 28px;
+    float: left;
+    margin-top: 8px;
+}
+.Welcome-solid{ 
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.Welcome-profileImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(158, 158, 158);
+    margin-left: 50px;
+}
+.Welcome-profileName{
+    width: 150px;
+    height: 50px;
+    color: rgb(87, 87, 87);
+    margin-top: -5px;
+    margin-left: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "open Sans";
+    letter-spacing: 1px;
+}
+.Welcome-profile{
+    position: absolute;
+    top: 10px;
+    right: 130px;
+    width: 80px;
+    height: 80px;
+    display: block;
+    font-weight: bold;
+}
+
+#Welcome-loginButton button{
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    width: 150px;
+    background-color: $red;
+    color: #f0eee5;
+    border: none;
+    padding: 13px 0px;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius:0.12em;
+    text-align:center;
+    transition: all 0.2s;
+    outline: none;
+}
+#Welcome-loginButton button:hover{
+    color:$lightBeige;
+    background-color: #d63818;
+}
+#Welcome-loginLabel{
+    position: absolute;
+    top: 23%;
+    right: 18%;
+    color: rgb(190, 184, 184);
+}
+#Welcome-Register{
+    position: absolute;
+    top: 250px;
+    right: 190px;
+    width: 150px;
+    background-color: transparent;
+    color: $red;
+    border: 2px solid $red;
+    padding: 9.3px 0px;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius:0.12em;
+    text-align:center;
+    transition: all 0.2s;
+    text-decoration: none;
+    outline: none;
+}
+#Welcome-continueButton {
+    position: absolute;
+    top: 450.4px;
+    right: 320px;
+    width: 150px;
+    background-color: transparent;
+    color: $red;
+    border: 2px solid $red;
+    padding: 11px 0px;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius:0.12em;
+    text-align:center;
+    transition: all 0.2s;
+    text-decoration: none;
+    outline: none;
+    z-index: 99; 
+}
+#Welcome-Register:hover,
+#Welcome-continueButton:hover{
+    color: #d63818;
+    background-color: transparent;
+    border-color: #d63818;
+}
+.Welcome-loader{
+    position: absolute;
+    top: 260px;
+    left: 505px;
+    content: url(../../Assets/stepsLoader.svg);
+}
+.Welcome-imageBack{
+    background-image: url(../../Assets/welcomBack.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 30px;
+    top: 120px;
+    width: 550px;
+    height: 400px;
+}
+.Welcome-introduction{
+    position: absolute;
+    top:33%;
+    right:10%;
+    width: 40%;
+    height: 44%;
+}
+.Welcome-introduction>h1{
+    color: grey;
+    font-weight: 300;
+    font-family: "open Sans";
+    font-size: 38px;
+}
+.Welcome-introduction>h1>span{
+    color: rgb(46, 46, 46);
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Welcome-introduction>h4{
+    color: rgb(97, 97, 97);
+    font-weight: normal;
+}
+.Welcome-functions {
+    margin-top: 60px;
+    width: 100%;
+/*    background-image:url('../../Assets/welcome-background.jpg');*/
+    background-repeat: no-repeat;
+    background-size: 1367px  600px;
+}
+
+.Welcome-functions{
+    height: 600px;
+    width: 100%;
+}
+.Welcome-fonctionnalities{
+    height: 283px;
+    width: 100%; 
+    background-color: #b3d8d1;
+    position: relative;
+    z-index: 9999999999;
+}
+.Welcome-recomm,
+.Welcome-search,
+.Welcome-profileMan,
+.Welcome-saveRate{
+    position: absolute;
+    top: -70px;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-color: #bdd1bd;
+    float: left;
+    border-bottom: 2px solid #187a6a;
+}
+.Welcome-recomm{
+    left: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Welcome-recomm>img{
+    content: url(../../Assets/recommendations.png);
+    height:65px;
+    width: 65px;
+}
+.Welcome-search{
+    left: 408px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Welcome-search>img{
+    content: url(../../Assets/search-books.png);
+    height:65px;
+    width: 65px;
+}
+.Welcome-profileMan{
+    left: 711px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Welcome-profileMan>img{
+    content: url(../../Assets/profile.png);
+    height:65px;
+    width: 65px;
+}
+.Welcome-saveRate{
+    left: 1011px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Welcome-saveRate>img{
+    content: url(../../Assets/saved.png);
+    height:65px;
+    width: 65px;
+}
+.Welcome-recomm-comment{
+    margin-top: 0;
+    position: absolute;
+    top: 75px;
+    left: 52px;
+    width: 250px;
+}
+.Welcome-recomm-comment>h4{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #386e8a;
+}
+.Welcome-recomm-comment>p{
+    text-align: center;
+    font-size: 14px;
+    color: #386e8a;
+}
+.Welcome-search-comment{
+    margin-top: 0;
+    position: absolute;
+    top: 75px;
+    left: 352px;
+    width: 250px;
+}
+.Welcome-search-comment>h4{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #386e8a;
+}
+.Welcome-search-comment>p{
+    text-align: center;
+    font-size: 14px;
+    color: #386e8a;
+}
+.Welcome-profile-comment{
+    margin-top: 0;
+    position: absolute;
+    top: 75px;
+    left: 655px;
+    width: 250px;
+}
+.Welcome-profile-comment>h4{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #386e8a;
+}
+.Welcome-profile-comment>p{
+    text-align: center;
+    font-size: 14px;
+    color: #386e8a;
+}
+.Welcome-saveRate-comment{
+    margin-top: 0;
+    position: absolute;
+    top: 75px;
+    left: 956px;
+    width: 250px;
+}
+.Welcome-saveRate-comment>h4{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #386e8a;
+}
+.Welcome-saveRate-comment>p{
+    text-align: center;
+    font-size: 14px;
+    color: #386e8a;
+}
+.Welcome-footer{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: #136b5e;
+    z-index: 9999999999;
+}
+.Welcome-footerContactsIcon{
+    width: 35px;
+    height: 35px;
+    float: left;
+    //border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: transparent;
+}
+.Welcome-footerContactsIcon>img{
+    height: 15px;
+    width: 15px;
+}
+.Welcome-footerContactsIcon:hover{
+    background-color: $red;
+    border-color: $red;
+}
+.Welcome-Ffb{ content:url(../../Assets/facebook-logo-w.png); }
+.Welcome-Finsta{ content:url(../../Assets/instagram-logo-w.png); }
+.Welcome-Fin{ content:url(../../Assets/linkedin-logo-w.png); }
+.Welcome-Fgh{ content:url(../../Assets/github-logo-w.png); }
+
+.Welcome-footerContactsIcon:hover>.Welcome-Ffb{ content:url(../../Assets/facebook-logo-w.png); }
+.Welcome-footerContactsIcon:hover>.Welcome-Finsta{ content:url(../../Assets/instagram-logo-w.png); }
+.Welcome-footerContactsIcon:hover>.Welcome-Fin{ content:url(../../Assets/linkedin-logo-w.png); }
+.Welcome-footerContactsIcon:hover>.Welcome-Fgh{ content:url(../../Assets/github-logo-w.png); }
+
+.Welcome-footerContacts{
+    position: absolute;
+    bottom: 31px;
+    left: 553px;
+}
+.Welcome-footer>p{
+    position: absolute;
+    bottom: 3px;
+    left: 543px;
+    color: white;
+    font-size: 11px;
+    font-weight: lighter;
+}
+.Welcome-footer>p>a{
+    color: rgb(209, 209, 209);
+}
+.Welcome-footer>p>a:hover{
+    color: $red;
+}

@@ -1,0 +1,176 @@
+$lightBeige : #eae7dc;
+$lightBeigeTrans : #eae7dc;
+$darkBeige : #d8c3a5;
+$grey : #8e8d8a;
+$lightRed:#e98074;
+$red :#e85a4f;
+
+$darkGreen:#2c3531;
+$darkGreenTrans:#2c3531c9;
+$lightGreen:#116466;
+$brown:#d9b08c; //used for the steps in the stepper
+$darkBeige:#ffcb9a;
+$lightBeige : #eae7dc;
+$blue:#d1e8e2;
+
+$lightGrey: #f2f2f2;
+$lightGrey2: #f3f7f6;
+$red: #f33e1b;
+$green: #3cb35e;
+$darkBlue: #386e8a;
+$lightGreen: #bdd1bd;
+
+.Header-header{
+    background-color: $lightGrey;
+    top: 0;
+    width: 100%;
+    height: 78px;
+    position: fixed;
+    z-index: 10222;
+    border-bottom: 1px solid $grey;
+}
+.Header-headerContactsIcon{
+    width: 35px;
+    height: 35px;
+    float: left;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.Header-headerContactsIcon>img{
+    height: 15px;
+    width: 15px;
+}
+.Header-headerContactsIcon:hover{
+    background-color: $red;
+    border-color: $red;
+}
+.Header-fb{ content:url(../../../Assets/facebook-logo.png); }
+.Header-insta{ content:url(../../../Assets/instagram-logo.png); }
+.Header-in{ content:url(../../../Assets/linkedin-logo.png); }
+.Header-gh{ content:url(../../../Assets/github-logo.png); }
+
+.Header-headerContactsIcon:hover>.Header-fb{ content:url(../../../Assets/facebook-logo-w.png); }
+.Header-headerContactsIcon:hover>.Header-insta{ content:url(../../../Assets/instagram-logo-w.png); }
+.Header-headerContactsIcon:hover>.Header-in{ content:url(../../../Assets/linkedin-logo-w.png); }
+.Header-headerContactsIcon:hover>.Header-gh{ content:url(../../../Assets/github-logo-w.png); }
+
+.Header-headerContacts{
+    position: absolute;
+    top: 19px;
+    left: 66px;
+}
+#Header-appTitle h3 {
+    color: rgb(75, 75, 75);
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "open Sans", sans-serif;
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}
+#Header-appTitle h5 {
+    color: grey;
+    margin-top: -5px;
+    margin-left: 13px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-right: 30px;
+    font-weight: normal;
+    font-style: italic;
+}
+#Header-appTitle a {
+    text-decoration: none;
+}
+#Header-appTitle{
+    position: absolute;
+    display: block;
+    left: 513px;
+    top: 10px;
+    width: 300px;
+}
+#Header-appTitle span{
+    display: block;
+    float: left;
+}
+.Header-googleImg{
+    width: 100px;
+    height: 28px;
+    float: left;
+    margin-top: 8px;
+}
+
+.Header-solid{ 
+    margin-left: 6px;
+    margin-right: 6px;
+    float: left;
+}
+
+.Header-profileImage{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid rgb(138, 138, 138);
+    margin-left: 51px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+.Header-profileName{
+    width: 150px;
+    height: 50px;
+    color: rgb(75, 75, 75);
+    margin-top: -2px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.Header-profile{
+    position: absolute;
+    top: 5px;
+    right: 130px;
+    width: 70px;
+    height: 70px;
+    display: block;
+    font-weight: bold;
+}
+.Header-profile a{
+    text-decoration: none;
+}
+.Header-navBar{
+    position: fixed;
+    top: 79px;
+    width: 100%;
+    height: 34px;
+    background-color: $darkBlue;
+    z-index: 9999;
+    box-shadow: 1px 1px 3px #888888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid $lightGrey2;
+}
+.Header-navBar>ul li{
+    display: inline;
+    padding: 8px 25px;
+    cursor: pointer;
+    transition: transform 0.6s linear;
+}
+.Header-navBar ul a{
+    text-decoration: none;
+    color: $lightGrey2;
+    font-size: 14px;
+}
+.Header-navBar>ul li:hover{
+    border-bottom: 2px solid $lightGreen;
+}
+.Header-navBar>ul li:hover{
+    color: $lightGreen;
+}

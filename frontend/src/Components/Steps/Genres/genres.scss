@@ -1,0 +1,145 @@
+$lightBeige : #eae7dc;
+$lightBeigeTrans : #eae7dce5;
+$darkBeige : #d8c3a5;
+$grey : #8e8d8a;
+$lightRed:#e98074;
+$red :#e85a4f;
+
+$darkGreen:#2c3531;
+$darkGreenTrans:#2c3531c9;
+$lightGreen:#116466;
+$brown:#d9b08c; //used for the steps in the stepper
+$darkBeige:#ffcb9a;
+$lightBeige : #eae7dc;
+$blue:#d1e8e2;
+
+$lightGrey: #f2f2f2;
+$lightGrey2: #f3f7f6;
+$red: #f33e1b;
+$green: #3cb35e;
+$darkBlue: #386e8a;
+$lightGreen: #bdd1bd;
+
+.Genres-wrapper {
+  background-color: $lightGrey2;
+  position: absolute;
+  top: 18px;
+  height: 97vh;
+  width: 100%;
+  transition: 0.3s all;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -2;
+  }
+.Genres-formWrapper{ 
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  width: 90%;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgb(124, 121, 121);
+  background-color: rgba($lightGreen, 0.5);
+  color: $darkBlue;
+}
+.Genres-StepsHeader{
+  width: 100%;
+  padding-top:70px;
+  padding-bottom: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.Genres-StepsHeader a{
+  font-weight: bold !important;
+}
+.Genres-form1{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(7, 1fr);  
+  text-align: left;
+}
+.Genres-formHeader h2 {
+  text-align: center;
+  width: 100%;
+  color: $darkBlue;
+  font-weight: normal;
+  margin-bottom:0;
+}
+
+.Genres-formHeader p{
+  text-align: center;
+  width: 100%;
+  font-weight: 350;
+  font-size: 13px;
+  color:  $darkBlue;
+  margin-top: 5px;
+}
+
+.Genres-checkButton input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 81%);
+}
+
+#Genres-checkAllButton {
+    margin-bottom: 7px;
+}
+
+.Genres-checkButton>label:hover {
+  cursor: pointer;
+  color: $red;
+}
+.Genres-showGenres button{
+  outline: 0;
+  border: 0;
+}
+
+.Genres-imageBack{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(../../../Assets/genreBack.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 180px;
+  z-index: -1;
+}
+
+.Genres-continueButton button {
+  color: $red;
+  font-weight: bolder;
+  font-size: 16px;
+  border-radius: 3px;
+  border : 2px solid $red;
+  background: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  outline: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 570px;
+  transition: 0.3s;
+}
+
+.Genres-continueButton button:hover{
+  border-color: $red;
+  background-color: $red;
+  color: white;
+}
+
+.Genres-tooltip{
+  z-index: 100000 !important; 
+}
+
+.Genres-loader{
+  position: absolute;
+  bottom: 30px;
+  left: 724px;
+  content: url(../../../Assets/stepsLoader.svg);
+}

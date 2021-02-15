@@ -1,0 +1,275 @@
+$lightGrey: #f2f2f2;
+$lightGrey2: #f3f7f6;
+$red: #f33e1b;
+$green: #3cb35e;
+$darkGreen: #2b8144;
+$darkBlue: #386e8a;
+$lightGreen: #bdd1bd;
+$lightGreenBack: #dae6da;
+
+
+.About-wrapper{
+    background-image: url(../../../Assets/savedBack.jpg);
+    background-repeat: repeat;
+    background-size:  666px 310px;
+    width: 100%;
+    height: 3700px;
+}
+.About-searchWrapper>h2{
+    color: $lightGrey2;
+    position: absolute;
+    top: 2px;
+    left: 130px;
+    font-size: 20px;
+}
+.About-searchWrapper{
+    width: 100%;
+    height: 60px;
+    background-color: $darkBlue;
+    z-index: 1000;
+    position: fixed;
+    top: 114px;
+    box-shadow: 5px 1px 12px #888888;
+    z-index: 4;
+}
+.About-desc{
+    height: 120px;
+    width: 90%;
+    position: absolute;
+    top: 174px;
+    padding-left: 100px;
+    padding-top: 17px;
+}
+.About-functionalities{
+    height: 150px;
+    position: absolute;
+    top: 414px;
+    padding-left: 100px;
+    padding-top: 17px;
+}
+.About-desc>h3,
+.About-functionalities>h3{
+    color: $red;
+    font-size: 22px;
+}
+.About-desc p,
+.About-functionalities p{
+    font-size: 14px;
+    color: #152c38;
+}
+.About-functionalitiesDetails{
+    height: 600px;
+    width: 90%;
+    position: absolute;
+    top: 540px;
+    padding-left: 100px;   
+}
+.About-functionalitiesDetails>div>h4{
+    color: $darkBlue;
+    font-size: 22px;
+}
+.About-functionalitiesDetails>div>p{
+    font-size: 14px;
+    color: #152c38;
+    margin-left: 20px;
+}
+
+.About-welcome{
+    position: absolute;
+    top: 0;
+    height: 390px;
+    width: 90%;
+}
+.About-login{
+    height: 270px;
+    width: 460px;
+    margin-left: 50px;
+    float: left;
+    background-image: url(../../../Assets/about-login.png);
+    background-size: 100% 100%;
+}
+.About-logout{
+    height: 270px;
+    width: 460px;
+    margin-top: 5px;
+    margin-left: 120px;
+    float: left;
+    background-image: url(../../../Assets/about-logout.png);
+    background-size: 100% 100%;
+}
+.About-steps{
+    position: absolute;
+    top: 430px;
+    height: 820px;
+    width: 90%;
+}
+.About-infoPersoTitle{
+    margin-left: 20px;
+    color: $darkGreen;
+    width: 539px;
+    float: left;
+    font-size: 17px;
+}
+.About-genresTitle{
+    margin-left: 45px;
+    color: $darkGreen;
+    width: 339px;
+    float: left;
+    font-size: 17px;
+}
+.About-ratingsTitle{
+    margin-left: 20px;
+    color: $darkGreen;
+    width: 1039px;
+    float: left;
+    font-size: 17px;
+}
+.About-infoPerso{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 55px;
+    float: left;
+    background-image: url(../../../Assets/about-infoperso.png);
+    background-size: 100% 100%;
+}
+.About-genres{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 120px;
+    float: left;
+    background-image: url(../../../Assets/about-genres.png);
+    background-size: 100% 100%;
+}
+.About-ratings{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 52px;
+    float: left;
+    background-image: url(../../../Assets/about-rating.png);
+    background-size: 100% 100%;
+}
+.About-searchRatings{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 130px;
+    float: left;
+    background-image: url(../../../Assets/about-searchRating.png);
+    background-size: 100% 100%;
+}
+.About-principal{
+    position: absolute;
+    top: 1280px;
+    height: 1800px;
+    width: 90%;
+}
+.About-principal h5{
+    color: $darkGreen;
+    font-size: 17px;
+}
+.About-homeTitle{
+    width: 1000px;
+    float: left;
+}
+.About-home{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 50px;
+    float: left;
+    background-image: url(../../../Assets/about-chooseRS.png);
+    background-size: 100% 100%;
+}
+.About-marketplace{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 130px;
+    float: left;
+    background-image: url(../../../Assets/about-marketplace.png);
+    background-size: 100% 100%;
+}
+.About-recomendationsTitle{
+    width: 1000px;
+    float: left;
+}
+.About-recommendations{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 50px;
+    float: left;
+    background-image: url(../../../Assets/about-home.png);
+    background-size: 100% 100%;
+}
+.About-searchHome{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 130px;
+    float: left;
+    background-image: url(../../../Assets/about-searchHome.png);
+    background-size: 100% 100%;
+}
+.About-savedTitle{
+    width: 500px;
+    float: left;
+}
+.About-ratedTitle{
+    margin-left: 100px;
+    width: 400px;
+    float: left;
+}
+.About-saved{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 50px;
+    float: left;
+    background-image: url(../../../Assets/about-saved.png);
+    background-size: 100% 100%;
+}
+.About-rated{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 130px;
+    float: left;
+    background-image: url(../../../Assets/about-rated.png);
+    background-size: 100% 100%;
+}
+.About-profileTitle{
+    width: 1000px;
+    float: left;
+}
+.About-profile{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 50px;
+    float: left;
+    background-image: url(../../../Assets/about-profile.png);
+    background-size: 100% 100%;
+}
+.About-modifyProfile{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 130px;
+    float: left;
+    background-image: url(../../../Assets/about-modifyProfile.png);
+    background-size: 100% 100%;
+}
+.About-modifyGenres{
+    float: left;
+    height: 270px;
+    width: 460px;
+    margin-left: 360px;
+    margin-top: 30px;
+    float: left;
+    background-image: url(../../../Assets/about-modifyGenres.png);
+    background-size: 100% 100%;
+}

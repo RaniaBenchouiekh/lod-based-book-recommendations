@@ -1,0 +1,16 @@
+
+.Principal-footer{
+    width: 100%;
+    height: 6%;
+    background-color: rgb(240, 119, 189);
+}
+#Principal-endFooter{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3%;
+    background-color: rgb(119, 115, 119);
+    font-size: 13px;
+    color:#fff;
+    z-index: 999999;
+}

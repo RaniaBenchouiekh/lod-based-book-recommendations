@@ -1,0 +1,405 @@
+$lightBeige : #eae7dc;
+$lightBeigeTrans : #eae7dc;
+$darkBeige : #d8c3a5;
+$grey : #8e8d8a;
+$lightRed:#e98074;
+$red :#e85a4f;
+
+$darkGreen:#2c3531;
+$darkGreenTrans:#2c3531c9;
+$lightGreen:#116466;
+$brown:#d9b08c; //used for the steps in the stepper
+$darkBeige:#ffcb9a;
+$lightBeige : #eae7dc;
+$blue:#d1e8e2;
+
+$lightGrey: #f2f2f2;
+$lightGrey2: #f3f7f6;
+$red: #f33e1b;
+$green: #3cb35e;
+$darkGreen: #2b8144;
+$darkBlue: #386e8a;
+$lightGreen: #bdd1bd;
+
+.PC-cardList{
+    display: block;
+    width: 100%;
+}
+.PC-card{  
+    float: left;
+    display: flex;
+    width: 372px;
+    height:208px;
+    box-sizing: border-box;
+    box-shadow: 0px .2rem 1rem rgba(0,0,0,.2);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color:#333;
+    margin: 10px;
+    background-color: $lightGrey;
+    border: 0.3px solid grey;
+}
+.PC-cardHeader{
+    position: relative;
+    display: block;
+}
+.PC-imageData{
+    height: 100%;
+    position: relative;
+    flex-basis: 40%;
+    z-index: 1;
+    overflow: hidden;
+    background-color: $lightGrey;
+}
+.PC-backgroundImage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    transition: transform .9s;
+    background-color: $lightGrey;
+}
+.PC-cardImage{
+    width: 100%;
+    height: 100%;
+}
+.PC-card:hover .PC-backgroundImage{
+    transform: scale(1.3);
+}
+
+.PC-publicationDetails{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 20px 20px 20px 10px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba($red,0.9) 0%, rgba(#ff836a,0.9) 100%);
+    font-size: 11px;
+    font-weight: bold;
+    color:#eee;
+    transform : translateX(-100%);
+    transition : transform .5s;
+}
+.PC-subtitle{
+    display: block;
+    margin-bottom: 8px;
+    width: 90%;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all .6s;
+    transition-duration: 1s;
+ }
+.PC-releaseDate{
+    display: block;
+    margin-bottom: 8px;
+    width: 90%;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all .7s;
+    transition-duration: 1s;
+}
+.PC-author{
+   display: block;
+   margin-bottom: 8px;
+   width: 90%;
+   color:inherit;
+   text-decoration: none;
+   transform: translateY(50px);
+   opacity: 0;
+   transition: all .8s;
+   transition-duration: 1s;
+}
+.PC-language{
+   display: block;
+   margin-bottom: 8px;
+   width: 90%;
+   transform: translateY(60px);
+   opacity: 0;
+   transition: all .9s;
+   transition-duration: 1s;
+}
+ .PC-numberOfPages{
+    display: block;
+    margin-bottom: 8px;
+    width: 90%;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: all 1s;
+    transition-duration: 1s;
+ }
+.PC-card:hover .PC-author,
+.PC-card:hover .PC-subtitle,
+.PC-card:hover .PC-numberOfPages,
+.PC-card:hover .PC-language,
+.PC-card:hover .PC-releaseDate{
+    transform:translateY(0);
+    opacity: 1;
+}
+.PC-subtitle:hover,
+.PC-releaseDate:hover,
+.PC-author:hover,
+.PC-numberOfPages:hover,
+.PC-language:hover{
+    color: $lightGreen;
+    cursor: text;
+}
+.PC-postData{
+    background-color: $lightGrey;
+    padding:10px 15px;
+    position: relative;
+    flex-basis: 60%;
+}
+
+.PC-postData::before{
+    content: '';
+    width: 20px;
+    height: 100%;
+    background-color: $lightGrey;
+    position: absolute;
+    top:0;
+    left: -11px;
+    z-index: 10;
+    transform: skewX(-5deg);
+
+}
+.PC-title{
+    font-size:16px;
+    line-height: 1;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 2px;
+    width: 175px;
+    height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.PC-title:hover~.PC-completeTitle,
+.PC-completeTitle:hover{
+    display: block;
+}
+.PC-completeTitle{
+    display: none;
+    background-color: $lightGrey;
+    padding: 5px;
+    border: 0.5px solid $darkBlue;
+    color: $darkBlue;
+    z-index: 99;
+}
+.PC-completeTitle{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.PC-provider{
+    font-size:12px;
+    font-weight: 400;
+    color: #a2a2a2;
+    margin:0.5rem 0 1rem 0;
+}
+.PC-description{
+    position: relative;
+    font-size: 11px;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.PC-description:active~.PC-descriptionHoverContainer, 
+.PC-descriptionHoverContainer:hover,
+.PC-description:active~.PC-descHoverMore{
+    display: block;
+}
+
+.PC-description:hover{
+    border-left: 2px solid $darkGreen;
+}
+.PC-descriptionEllipsis{
+    display: -webkit-box;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; 
+}
+.PC-descriptionHoverContainer{
+    display: none;
+    z-index: 90;
+    position: absolute;
+    top: 65px;
+    left : -130px;
+    width: 350px;
+    background-color: $lightGrey2;
+    border-radius: 8%;
+    box-shadow: 2px .8rem 1rem rgba(0,0,0,.6);
+}
+.PC-descriptionHover{
+    float: left;
+    display: -webkit-box;
+    width: 72%;
+    color: $darkBlue;
+    font-size: 11px;
+    background-color: transparent;
+    z-index: 90;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical; 
+    text-align: center;
+}
+.PC-description::first-letter{
+    margin-left: 14px;
+}
+.PC-descQuote1{
+    margin-top: 5px;
+    width: 33px;
+    height: 22px;
+    float: left;
+    margin-right: 8px;
+    margin-left: 10px;
+}
+.PC-descQuote2{
+    position: absolute;
+    bottom: 20px;
+    width: 33px;
+    height: 22px;
+    float: right;
+    margin-left: 8px;
+    right: 10px;
+}
+.PC-descHoverMore{
+    margin-left: 93px;
+    margin-bottom: 5px;
+    width:200px;
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    color:rgb(83, 83, 83);
+}
+/*
+.PC-description::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 4px;
+    height: 14px;
+    background:linear-gradient(90deg, rgba(51,131,40,0.9612219887955182) 0%, rgba(121,237,191,0.8631827731092436) 100%);
+    border-radius: 1px;
+}*/
+.PC-cta{  
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    position: relative;
+}
+.PC-cta a{
+    position: absolute;
+    right: 13px;
+    top: 0;
+    background: linear-gradient(90deg, rgba($darkGreen,0.9) 0%, rgba($green,0.9) 100%);
+    background-clip: text;
+    color:transparent;
+    font-size: 13px;
+    text-decoration: none;
+}
+.PC-cta a::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom:-.5rem;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba($darkGreen,0.9) 0%, rgba($lightGreen,0.9) 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+.PC-cta a:hover::before{
+    transform: scaleX(1);
+}
+.PC-card:hover .PC-publicationDetails{
+    transform : translateX(0)
+}
+.PC-heart{
+    position: absolute;
+    top: 0;
+    right: -13px;
+    margin-right: 16px;
+    transition: 0.3s;
+    transition: all .6s;
+}
+.PC-heart input{
+    height: 11px;
+    width: 11px;
+    background-color: rgb(233, 227, 227);
+    position: relative;
+    outline: none;
+    transform: rotate(45deg);
+    -webkit-appearance:none;
+}
+.PC-heart input:hover,
+.PC-heart input:hover:before,
+.PC-heart input:hover:after{
+    background-color: $red;
+    cursor: pointer;
+}
+.PC-heart input:before{
+    position: absolute;
+    content:'';
+    background-color: rgb(233, 227, 227);
+    top:-59%;
+    height:60%;
+    width: 100%;
+    border-radius: 75px 75px 0 0;
+}
+
+.PC-heart input:after{
+    position: absolute;
+    content:'';
+    background-color: rgb(233, 227, 227);
+    height: 60%;
+    width: 100%;
+    transform: rotate(-90deg);
+    border-radius: 75px 75px 0 0;
+    top:20%;
+    right:79%;
+}
+.PC-heart input:checked,
+.PC-heart input:checked:before,
+.PC-heart input:checked:after{
+    background-color: $red;
+}
+.PC-delete{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: -1px;
+    margin-top: -6px;
+    height: 28px;
+    width: 28px;
+    color:$red;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 5px;
+    background-color: transparent;
+    border: 2px solid $red;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.PC-delete:hover{
+    background-color: $red;
+    color: $lightGrey2;
+}
+.PC-score{
+    font-size:12px;
+    font-weight: 400;
+    color: #a2a2a2;
+    margin:0.5rem 0 1rem 0;   
+}
+.PC-score>span{
+    display: inline;
+    color: $red;
+    font-weight: bold;
+}

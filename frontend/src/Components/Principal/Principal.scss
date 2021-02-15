@@ -1,0 +1,281 @@
+$lightBeige : #eae7dc;
+$lightBeigeTrans : #eae7dc;
+$darkBeige : #d8c3a5;
+$grey : #8e8d8a;
+$lightRed:#e98074;
+$red :#e85a4f;
+
+$darkGreenTrans:#2c3531c9;
+$brown:#d9b08c; 
+$darkBeige:#ffcb9a;
+$lightBeige : #eae7dc;
+$blue:#d1e8e2;
+
+$lightGrey: #f2f2f2;
+$lightGrey2: #f3f7f6;
+$red: #f33e1b;
+$green: #3cb35e;
+$darkGreen: #2b8144;
+$darkBlue: #386e8a;
+$lightGreen: #bdd1bd;
+$lightGreenBack: #dae6da;
+
+
+.Principal-wrapper{
+    margin:0;
+    padding: 0;
+}
+#Principal-banner{
+    width: 100%;
+    height: 250px;
+    position: fixed;
+    top: 113px;
+    left: 34px;
+}
+#Principal-banner h2{
+    padding-top: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.Principal-contentWrapper{
+    position: absolute;
+    top: 291px;
+    left:0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url(../../Assets/savedBack.jpg);
+    background-repeat: repeat;
+    background-size:  666px 310px;
+}
+.Principal-content{  
+    width: 100vw;
+    padding: 20px 10px;
+    padding-left: 80px;
+    margin-bottom: 110px;
+}
+.Pricipal-searchWrapper>h2{
+    color: $lightGrey2;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.Principal-content-loading{
+    width: 93vw;
+    padding: 80px 20px;
+    padding-left: 70px;
+    height: 438px;
+}
+.Pricipal-searchWrapper{
+    width: 100%;
+    height: 60px;
+    background-color: $darkBlue;
+    z-index: 1000;
+    position: sticky;
+    top: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 1px 12px #888888;
+}
+#Principal-searchArea{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    width: 53.4%;
+    margin: 0;
+    background-color: rgba(rgb(0, 22, 20),0.2);
+    margin-left: 38px;
+}
+.Principal-searchForm{
+    width: 76%;
+}
+.Principal-searchField{
+    width: 87%;
+    height: 27px;
+    padding-left: 10px;
+    border: none;
+    font-family: "Lucida Console", Courier, monospace;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+.Principal-searchField::placeholder{
+    font-size: 12px;
+}
+.Principal-searchField:focus{
+    outline: none;
+}
+.Principal-searchButton{
+    width: 8.3%;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    margin-right: 6px;
+}
+
+.Principal-searchField:focus~.Principal-searchButton{
+    border: 1px solid #000;
+}
+
+.Principal-searchButton>img{
+    width: 45%;
+    height: 12px;
+}
+.Principal-recommendationsButton{
+    width: 22%;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    color: #2b8144;
+}
+.Principal-recommendationsButton>img{
+    width: 10%;
+    height: 13px;
+    margin-right: 5px;
+}
+.Principal-rsLoginButton{
+    width: 237px;
+    padding: 10px 9px;
+    margin: 0;
+    border: solid 2px ;
+    background-color: transparent;
+    border: 2px solid $red;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 39%;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+.Principal-rsLoginButtonComment{
+    margin-top: 30px;
+    text-align: center; 
+    width: 100%;
+    font-size: 13px;
+    color: $grey;
+}
+.Principal-rsLoginButton:hover{
+    background-color: $red;
+    border-color: $red;
+}
+.Principal-rsLoginButton:hover>a{
+    color: $lightGreenBack;
+}
+.Principal-rsLoginButton a {
+    text-decoration: none;
+    color: $red;
+}
+.Principal-rsLoginButtonWrapper{
+    width: 100%;
+}
+.Principal-rsLoginButtonContainer{
+    display: block;
+    width: 100%;
+    height: 156px;
+}
+.Principal-RSWarning{
+    width: 100%;
+    background-color: $red;
+    color: blanchedalmond;
+    height: 20px;
+    font-size: 13px;
+    position: fixed;
+    top: 113px;
+    z-index: 1000;
+    display: block;
+}
+.Principal-RSWarning div {
+    float: left;
+    margin-left: 300px;
+    margin-top: 1.5px;
+}
+.Principal-RSWarning button {
+    float: right;
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    color: blanchedalmond;
+    cursor: pointer;
+}
+.Principal-RSWarning button:hover {
+    font-weight: bold;
+}  
+.Principal-notAvailable {
+    width: 100%;
+    text-align: center;
+    padding: 68px 5px;
+    color: $red;
+}
+.Principal-pagination {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: transparent;
+}
+.Principal-next {
+    color: $lightGreenBack;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 3px;
+    border : 2px solid $green;
+    background-color: $green; 
+    padding: 10px 30px;
+    cursor: pointer;
+    outline: 0;
+    position: absolute;
+    top: 29px;
+    right: 380px;
+    transition: 0.3s;
+}
+.Principal-previous {
+    color: $green;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 3px;
+    border : 2px solid $green;
+    background-color: transparent; 
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: 0;
+    position: absolute;
+    top: 29px;
+    left: 430px;
+    transition: 0.3s;
+}
+
+.Principal-next:hover {
+    background-color: #2b8144;
+    border-color: #2b8144;
+}
+
+.Principal-previous:hover{
+    border-color: #2b8144;
+    color: #2b8144;
+}
+.Principal-logout{
+    position: fixed;
+    top: 530px;
+    left: 0;
+    width: 63px;
+    height: 50px;
+    z-index: 9999;
+    cursor: pointer;
+    border: none;
+}
+.Principal-logout:hover{
+    background-color: rgba( #000000, 0.06);
+}
+.Principal-logout img{
+    content: url(../../Assets/logout.png);
+    width: 30px;
+    height: 30px;
+}

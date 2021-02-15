@@ -1,0 +1,383 @@
+$lightBeige : #eae7dc;
+$lightBeigeTrans : #eae7dce5;
+$darkBeige : #d8c3a5;
+$grey : #8e8d8a;
+$lightRed:#e98074;
+$red :#e85a4f;
+
+$darkGreen:#2c3531;//used for the front/back of the cards
+$darkGreenTrans:#2c3531c9;
+$lightGreen:#116466;
+$brown:#d9b08c; //used for the steps in the stepper
+$darkBeige:#ffcb9a;
+$lightBeige : #eae7dc;
+$blue:#d1e8e2;
+
+$lightGrey: #f2f2f2;
+$lightGrey2: #f3f7f6;
+$red: #f33e1b;
+$green: #3cb35e;
+$darkBlue: #386e8a;
+$lightGreen: #bdd1bd;
+
+.Ratings-wrapper{
+    position: absolute;
+    top: 18px;
+    height: 97vh;
+    width: 100%;
+    background-color: $lightGrey2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+    overflow: hidden;
+}
+.Books-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Books-booksWrapper {
+    top: 180px;
+    width: 77%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s all;
+    padding: 5px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgb(124, 121, 121);
+    background-color: rgba($lightGreen,0.8);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Books-StepsHeader {
+    width: 100%;
+    padding-top:82px;
+    padding-bottom: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Books-StepsHeader a{
+    font-weight: 500 !important;
+  }
+
+.Books-booksHeader{
+    height :60px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+.Books-booksHeader h2 {
+    font-weight: normal;
+    color: $darkBlue;
+    margin-top: 10px;
+    margin-left: 52px;
+    float: left;
+  }
+#Books-search p{
+    font-weight: 350;
+    font-size: 13px;
+    color: $darkBlue;
+    margin-top: -15px;
+    margin-left: 50px;
+    margin-bottom: 1px;
+}
+.SearchArea-search {
+    position: absolute;
+    width: 345px;
+    margin-top: -40px;
+    padding: 5px;
+    right: 200px;
+    background-color: #95ad95;
+    border-radius: 8px;
+}
+.SearchArea-search input{
+    border:none;
+    border-bottom : 2px solid $lightGreen;
+    border-radius: 3px;
+    height: 25px;
+    width: 270px;
+    cursor: text;
+    margin-right:7px;
+    margin-left:2px;
+    background-color: $lightGrey;
+    color : $darkGreen;
+    font-size: 13px;
+    padding-left: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.SearchArea-search input::placeholder{
+    color:rgb(165, 161, 161);
+}
+.SearchArea-search input:focus{
+    border-bottom : 2px solid $darkBlue;
+}
+#SearchArea-submit{
+    width:58px;
+    height: 28px;
+    border: none;
+    border-radius: 6px;
+    background-color: $lightGreen;
+    cursor: pointer;
+    color: $darkBlue;
+}
+#SearchArea-submit:hover{
+    background-color: $darkBlue;
+    color: white;
+}
+#SearchArea-submitDisabled{
+    width:58px;
+    height: 28px;
+    border: none;
+    border-radius: 6px;
+    background-color: grey;
+    cursor: default;
+    color:$lightBeige;
+}
+#Books-search {
+    width: 100%;
+    padding-bottom: 15px;
+    display: block;
+}
+.StarRating-radio{
+    display: none;
+}
+
+.rating-txt{
+    float: left;
+    width: 20%;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: smaller;
+    color: #b8b2b2;
+    margin: 0;
+}
+
+.BookList-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: transparent;
+    width: 75vw;
+}
+
+.BookCards-ListContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: transparent;
+    height: 50vh;
+    overflow-y: scroll;
+    width: 75vw;
+    margin-left: -50px;
+}
+
+.BookCard-cardWrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: transparent;
+    margin: 0;
+    padding: 40px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 150px;
+    height: 275px;
+}
+.BookCard-details{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top:20%;
+    left: 0;
+    padding:7%;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: small;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition: 0.3s;
+    opacity: 0;
+    text-align: center;
+}
+input[name="plus"]:checked ~.BookCard-details{
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+.BookCard-cardFront{
+    position: absolute;
+    float: left;
+    bottom:23px;
+    left:40px;
+
+}
+#BookCard-title{
+    font-size: 12px;
+    font-weight: bold;
+    color: $lightGrey2;
+    margin: 0;
+    text-align: center;
+}
+#BookCard-title-container {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 174px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 7px;
+    padding-right: 7px;
+    overflow: hidden;
+}
+.BookCard-provider {
+    width: 100%;
+    text-align: center;
+    color: rgba($lightGrey,0.6);
+    font-size: 11px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    bottom: -5px;
+}
+.BackTitle{
+    font-size: 16px;
+    font-weight: bold;
+    color: $grey;
+}
+.BookCard-info{
+    max-height: 42px;
+    overflow: hidden;
+    color: $lightGrey;
+    
+}
+.BookCard-info>p{
+    margin: 2px;
+    cursor: pointer;
+    
+}
+#BookCard-about{  
+    color: #74c58b;
+    font-weight: bolder;
+    font-size: 13px;
+    position: absolute;
+    bottom: 13px;
+    left: 37px;
+}
+#BookCard-about:hover{
+    color: $lightGreen;
+}
+.StarRating-star {
+    cursor: pointer;
+    transition: color 200ms;
+}
+.BookCard-details span{
+    margin-bottom: 3%;
+}
+
+ .BookCard-image{
+     position: relative;
+     float: left;
+     width: 100%;
+     height: 60%;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ .BookCard-image>img {
+     width: 100%; 
+     height: 100%;
+     overflow: hidden;
+ }
+ 
+::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background: #f3f3f3; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: $grey; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.BookCards-SubmitContainer {
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+.BookCards-Submit {
+    color: $red;
+    font-weight: bolder;
+    font-size: 16px;
+    border-radius: 3px;
+    border : 2px solid $red;
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: 0;
+    position: absolute;
+    bottom: 25px;
+    right: 19px;
+    transition: 0.3s;
+}
+.BookCards-Submit:hover{
+    border-color: $red;
+    background-color: $red;
+    color: $lightGrey2;
+}
+
+.Ratings-tooltip{
+    z-index: 100000 !important; 
+  }
+*:focus {
+    outline: none;
+}
+.Books-imageBack1{
+    position: absolute;
+    background: url(../../../Assets/ratingBack1.png);
+    background-size: 100% 100%;
+    width: 400px;
+    height: 400px;
+    right: -140px;
+    top: 130px;
+    z-index: -1;
+    overflow: hidden;
+}
+.Books-imageBack2{
+    position: absolute;
+    background: url(../../../Assets/ratingBack2.png);
+    background-size: 100% 100%;
+    width: 400px;
+    height: 400px;
+    left: -40px;
+    top: 135px;
+    z-index: -1;
+}
+.BookCards-loader{
+    position: absolute;
+    bottom: 38px;
+    right: 8px;
+    content: url(../../../Assets/stepsLoader.svg);
+}
+.BookCards-fetchErr{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    color: $red;
+}

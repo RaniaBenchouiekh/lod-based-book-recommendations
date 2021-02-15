@@ -1,0 +1,159 @@
+$lightBeige : #eae7dc;
+$lightBeigeTrans : #eae7dc;
+$darkBeige : #d8c3a5;
+$grey : #8e8d8a;
+$lightRed:#e98074;
+$red :#e85a4f;
+
+$darkGreen:#2c3531;
+$darkGreenTrans:#2c3531c9;
+$lightGreen:#116466;
+$brown:#d9b08c; 
+$darkBeige:#ffcb9a;
+$lightBeige : #eae7dc;
+$blue:#d1e8e2;
+
+$lightGrey: #f2f2f2;
+$lightGrey2: #f3f7f6;
+$red: #f33e1b;
+$green: #3cb35e;
+$darkGreen: #2b8144;
+$darkBlue: #386e8a;
+$lightGreen: #bdd1bd;
+$lightGreenBack: #dae6da;
+
+.SavedBooks-contentWrapper,
+.RatedBooks-contentWrapper{
+    position: absolute;
+    top: 66px;
+    left:0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 89.2vh;
+    overflow: auto;
+    background-image: url(../../../Assets/savedBack.jpg);
+    background-repeat: repeat;
+    background-size:  666px 310px;
+}
+.RatedBooks-loading,
+.SavedBooks-loading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../Assets/savedBack.jpg);
+    background-repeat: repeat;
+    background-size: 666px 310px;
+}
+.RatedBooks-cnxError,
+.SavedBooks-cnxError{
+    width: 100%;
+    height: 610px;
+    background-image: url(../../../Assets/savedBack.jpg);
+    background-repeat: repeat;
+    background-size: 666px 310px;
+}
+.RatedBooks-cnxError>p,
+.SavedBooks-cnxError>p{
+    color: $red;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+}
+.SavedBooks-content,
+.RatedBooks-content{
+    width: 100%;
+    padding:0 10px;
+    padding-top: 70px;
+    padding-left: 80px;
+    padding-right: 2px;
+    //background-color: $lightGreenBack;
+    padding-bottom: 70px;
+}
+.RatedBooks-searchWrapper>h2,
+.SavedBooks-searchWrapper>h2 {
+    color: $lightGrey2;
+    text-align: center;
+    font-size: 20px;
+}
+.RatedBooks-searchWrapper,
+.SavedBooks-searchWrapper {
+    width: 100%;
+    height: 60px;
+    background-color: $darkBlue;
+    z-index: 1000;
+    position: sticky;
+    top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 1px 12px #888888;
+}
+#RatedBooks-searchArea,
+#SavedBooks-searchArea{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    width: 38%;
+    margin: 0;
+    background-color: rgba(black,0.3);
+    margin-left: 398px;
+}
+
+.RatedBooks-searchField,
+.SavedBooks-searchField{
+    width: 450px;
+    height: 27px;
+    padding-left: 10px;
+    border: none;
+    font-family: "Lucida Console", Courier, monospace;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+.RatedBooks-searchField::placeholder,
+.SavedBooks-searchField::placeholder{
+    font-size: 12px;
+}
+.RatedBooks-searchField:focus,
+.SavedBooks-searchField:focus{
+    outline: none;
+}
+.RatedBooks-searchButton,
+.SavedBooks-searchButton{
+    width: 40px;
+    height: 39px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    margin-right: 6px;
+}
+
+.RatedBooks-searchField:focus~.RatedBooks-searchButton,
+.SavedBooks-searchField:focus~.RatedBooks-searchButton{
+    border: 1px solid #000;
+}
+
+.RatedBooks-searchButton>img,
+.SavedBooks-searchButton>img{
+    width: 13px;
+    height: 12px;
+}
+.SavedBooks-emptyListContentWrapper,
+.RatedBooks-emptyListContentWrapper{
+    width: 100%;
+    height: 610px;
+    background-image: url(../../../Assets/savedBack.jpg);
+    background-repeat: repeat;
+    background-size: 666px 310px;
+}
+.SavedBooks-emptyList,
+.RatedBooks-emptyList{
+    position: absolute;
+    top: 320px;
+    left: 594px;
+    color: $red;
+    font-weight: bolder;
+}
