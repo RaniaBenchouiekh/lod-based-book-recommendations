@@ -59,30 +59,44 @@ Here are some screenshots.
  
 ## Installation
 
-To use the application properly without any errors, you should install the following tools and packages via the terminal of your code editor ( Ex. [Visual Studio Code](https://code.visualstudio.com/download). 
-You can use the **npm** command as such:
+## Installation
+
+To use the application, you should install the following tools and packages via the terminal of your code editor ( Ex. [Visual Studio Code](https://code.visualstudio.com/download).
+Since all necessary packages are present in the ***package.json*** file, you can run :
+
+```bash
+npm install
+```
+Or re-install everything, one package at a time or more (use spacing between package names in the command) :
 
 ```bash
 npm install <tool_or_library_name>
 ```
+
 or use the **yarn** command :
+
 ```bash
 yarn install <tool_or_library_name>
 ```
 
 #### Application Frontend
   - [ReactJs](https://fr.reactjs.org/)
+  
 #### Application Backend
   - [Node.js](https://nodejs.org/en/)
   - [Express.js](https://expressjs.com/fr/)
+  
 #### Solid Libraries
   - [Solid Auth Client](https://github.com/solid/solid-auth-client)
   - [ACL Check](https://github.com/solid/acl-check)
   - [rdflib.js](https://github.com/linkeddata/rdflib.js/)
   - [Solid File Client](https://github.com/jeff-zucker/solid-file-client)
   - [Solid React Components](https://github.com/solid/react-components)
+  
 #### Additional libraries
+
   - React's **node-modules**, which can be installed as follows : 
+  
 ```bash
 npm install
 ```
@@ -116,6 +130,7 @@ For this project, we used a well known and a simple API which is the [GoogleBook
 - Including a **Recommender Systems Marketplace** to choose a recommender system provider.
 
 ## Application usage
+
 Once you access to the application's interface, there's a whole tab titled **About** in the navigation menu regarding how to use the interface (including images).
 
 ## Credits
