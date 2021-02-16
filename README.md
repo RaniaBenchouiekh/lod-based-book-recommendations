@@ -1,5 +1,5 @@
 # Solid Google Books
-**Solid Google Books**, a decentralized plateform for book recommendations.
+**Solid Google Books**, a decentralized plateform for book recommendations. (Linked repositories in the ***Projects*** section)
 
 ## Motivation
 The decentralized plateform **Solid Google Books** (SGB) was created in order to provide book recommendations to the users. 
